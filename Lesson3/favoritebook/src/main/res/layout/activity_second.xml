@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="256dp"
+        android:layout_height="75dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Любимая книга разработчика - "
+        android:textAlignment="center"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/textOut"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:hint="Введите название вашей любимой книги"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Button
+        android:onClick="sendData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Подтвердить"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
