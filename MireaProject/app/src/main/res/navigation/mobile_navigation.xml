@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_data">
+
+    <fragment
+        android:id="@+id/nav_data"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.data.DataFragment"
+        android:label="@string/data"
+        tools:layout="@layout/fragment_data" />
+
+    <fragment
+        android:id="@+id/nav_webView"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.webview.WebViewFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_web_view" />
+
+    <fragment
+        android:id="@+id/nav_notificationFragment"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson4.WorkerFragment"
+        android:label="@string/menu_notification"
+        tools:layout="@layout/fragment_worker"/>
+    <fragment
+        android:id="@+id/nav_compassFragment"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.CompassFragment"
+        android:label="@string/menu_compass"
+        tools:layout="@layout/fragment_compass"/>
+    <fragment
+        android:id="@+id/nav_notesFragment"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.NotesFragment"
+        android:label="@string/menu_notes"
+        tools:layout="@layout/fragment_notes"/>
+    <fragment
+        android:id="@+id/nav_microphoneFragment"
+        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.MicrophoneFragment"
+        android:label="@string/menu_microphone"
+        tools:layout="@layout/fragment_microphone"/>
+
+</navigation>

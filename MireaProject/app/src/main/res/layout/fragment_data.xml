@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral_variant20"
+    tools:context=".ui.data.DataFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/materialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="РТУ МИРЭА"
+        android:textColor="@color/material_dynamic_neutral60"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="      МИРЭА — Российский технологический университет — это один из крупнейших технологических вузов России.\n      Ведет подготовку в таких областях как информационные технологии и анализ данных, информационная и компьютерная безопасность, химия и биотехнология, радиоэлектроника, робототехника и автоматизация производства, экономика и управление, юриспруденция и дизайн.\n      "
+        app:layout_constraintTop_toBottomOf="@+id/materialTextView"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginStart="25sp"
+        android:layout_marginEnd="25sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
