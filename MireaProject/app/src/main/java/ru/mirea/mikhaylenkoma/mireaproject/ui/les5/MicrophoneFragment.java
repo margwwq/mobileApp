@@ -75,13 +75,13 @@ public class MicrophoneFragment extends Fragment {
             public void onClick(View v) {
                 if(_isStartRecording) {
                     _binding.textViewDuration.setText(String.format(Locale.getDefault(),
-                            "ДЛИТЕЛЬНОСТЬ\n0:00:00"));
-                    _recordButton.setText("СТОП ЗАПИСЬ");
+                            "Длительность\n0:00:00"));
+                    _recordButton.setText("Стоп");
                     _playButton.setEnabled(false);
                     startRecording();
                     startTimer();
                 } else {
-                    _recordButton.setText("СТАРТ ЗАПИСЬ");
+                    _recordButton.setText("Запись");
                     _playButton.setEnabled(true);
                     stopRecording();
                     _timer.cancel();
@@ -95,11 +95,11 @@ public class MicrophoneFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if(_isStartPlaying) {
-                    _playButton.setText("СТОП ПРОСЛУШИВАНИЕ");
+                    _playButton.setText("Завершить прослушивание");
                     _recordButton.setEnabled(false);
                     startPlaying();
                 } else {
-                    _playButton.setText("СТАРТ ПРОСЛУШИВАНИЕ");
+                    _playButton.setText("Начать прослушивание");
                     _recordButton.setEnabled(true);
                     stopPlaying();
                 }
@@ -185,7 +185,7 @@ public class MicrophoneFragment extends Fragment {
                 if(_minutes < 10) _minutesString = "0" + Integer.toString(_minutes);
                 if(_seconds < 10) _secondsString = "0" + Integer.toString(_seconds);
                 _binding.textViewDuration.setText(String.format(Locale.getDefault(),
-                        "ДЛИТЕЛЬНОСТЬ\n%d:%s:%s", _hours, _minutesString, _secondsString));
+                        "Длительность\n%d:%s:%s", _hours, _minutesString, _secondsString));
             }
         };
         _timer.scheduleAtFixedRate(_task, 1000, 1000);

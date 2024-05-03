@@ -7,34 +7,34 @@
 
     <fragment
         android:id="@+id/nav_data"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.data.DataFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.data.DataFragment"
         android:label="@string/data"
         tools:layout="@layout/fragment_data" />
 
     <fragment
         android:id="@+id/nav_webView"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.webview.WebViewFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.webview.WebViewFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_web_view" />
 
     <fragment
         android:id="@+id/nav_notificationFragment"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson4.WorkerFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les4.WorkerFragment"
         android:label="@string/menu_notification"
         tools:layout="@layout/fragment_worker"/>
     <fragment
         android:id="@+id/nav_compassFragment"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.CompassFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.CompassFragment"
         android:label="@string/menu_compass"
         tools:layout="@layout/fragment_compass"/>
     <fragment
         android:id="@+id/nav_notesFragment"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.NotesFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.NotesFragment"
         android:label="@string/menu_notes"
         tools:layout="@layout/fragment_notes"/>
     <fragment
         android:id="@+id/nav_microphoneFragment"
-        android:name="ru.mirea.nadezhkinaea.mireaproject.ui.lesson5.MicrophoneFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.MicrophoneFragment"
         android:label="@string/menu_microphone"
         tools:layout="@layout/fragment_microphone"/>
 

@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.lesson5.MicrophoneFragment">
+    tools:context=".ui.les5.MicrophoneFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#8B83D0"
+        android:background="#8FBC8F"
         android:orientation="vertical">
 
         <LinearLayout
@@ -22,7 +22,7 @@
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="103dp"
                 android:src="@drawable/microphone_icon"
                 app:tint="#FFFFFF" />
 
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="158dp"
                 android:layout_weight="1"
-                android:text="ДЛИТЕЛЬНОСТЬ\n0:00:00"
+                android:text="Длительность:"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="25sp"
@@ -66,26 +66,17 @@
                 <Button
                     android:id="@+id/buttonMicrophoneRecord"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_weight="1"
-                    android:text="СТАРТ ЗАПИСЬ" />
-
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2" />
+                    android:text="Запись" />
 
                 <Button
                     android:id="@+id/buttonMicrophonePlay"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="4dp"
                     android:layout_weight="1"
-                    android:text="СТАРТ ПРОСЛУШИВАНИЕ" />
+                    android:text="Прослушать" />
 
-                <Space
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2" />
             </LinearLayout>
 
         </LinearLayout>

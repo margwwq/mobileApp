@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral_variant20"
+    android:background="#8FBC8F"
     tools:context=".ui.data.DataFragment">
 
 
@@ -12,10 +12,10 @@
         android:id="@+id/materialTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
-        android:text="РТУ МИРЭА"
-        android:textColor="@color/material_dynamic_neutral60"
-        android:textSize="24sp"
+        android:layout_marginTop="64dp"
+        android:text="Эдуард Асадов \n Я могу тебя очень ждать…"
+        android:textColor="#D35A33"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,10 +24,11 @@
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="      МИРЭА — Российский технологический университет — это один из крупнейших технологических вузов России.\n      Ведет подготовку в таких областях как информационные технологии и анализ данных, информационная и компьютерная безопасность, химия и биотехнология, радиоэлектроника, робототехника и автоматизация производства, экономика и управление, юриспруденция и дизайн.\n      "
+        android:layout_marginTop="68dp"
+        android:text="Я могу тебя очень ждать,\n Долго-долго и верно-верно,\n И ночами могу не спать\n Год, и два, и всю жизнь, наверно!\n Пусть листочки календаря\n Облетят, как листва у сада,\n Только знать бы, что все не зря,\n Что тебе это вправду надо!\n Я могу за тобой идти\n По чащобам и перелазам,\n По пескам, без дорог почти,\n По горам, по любому пути,\n Где и черт не бывал ни разу!\n Все пройду, никого не коря,\n Одолею любые тревоги,\n Только знать бы, что все не зря,\n Что потом не предашь в дороге.\n Я могу для тебя отдать\n Все, что есть у меня и будет.\n Я могу за тебя принять \nГоречь злейших на свете судеб.\n Буду счастьем считать, даря\n Целый мир тебе ежечасно.\n Только знать бы, что все не зря,\n Что люблю тебя не напрасно!"
+        android:textColor="#5A1717"
+        android:textScaleX="1"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView"
-        tools:layout_editor_absoluteX="0dp"
-        android:layout_marginStart="25sp"
-        android:layout_marginEnd="25sp"/>
+        tools:layout_editor_absoluteX="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
