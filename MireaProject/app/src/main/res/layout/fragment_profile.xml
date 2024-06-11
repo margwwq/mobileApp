@@ -3,13 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".les6.ProfileFragment">
+    tools:context=".ui.les6.ProfileFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="20dp"
+        android:background="#8FBC8F">
 
         <TextView
             android:id="@+id/textView3"
@@ -100,6 +101,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_weight="1"
+                android:backgroundTint="#713C3C"
                 android:text="Сохранить"
                 android:textAlignment="center"
                 android:textSize="16sp" />
