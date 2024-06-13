@@ -5,7 +5,7 @@ import android.app.Application;
 import com.yandex.mapkit.MapKitFactory;
 
 public class App extends Application {
-    private final String MAPKIT_API_KEY = "4622de22-fd2c-4d45-ab4d-90034abe8151";
+    private final String MAPKIT_API_KEY = "48ea2f69-8680-44ab-afe1-8bd16b86c632";
 
     @Override
     public void onCreate() {

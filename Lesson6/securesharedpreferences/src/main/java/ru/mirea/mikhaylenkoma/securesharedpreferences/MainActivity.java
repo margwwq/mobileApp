@@ -1,42 +1,50 @@
 package ru.mirea.mikhaylenkoma.securesharedpreferences;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.security.crypto.EncryptedSharedPreferences;
-import androidx.security.crypto.MasterKeys;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.security.keystore.KeyGenParameterSpec;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.security.crypto.EncryptedSharedPreferences;
+import androidx.security.crypto.MasterKeys;
+
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 
+import ru.mirea.mikhaylenkoma.securesharedpreferences.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        KeyGenParameterSpec keyGenParameterSpec	=	MasterKeys.AES256_GCM_SPEC;
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        try	{
-            String	mainKeyAlias	=	MasterKeys.getOrCreate(keyGenParameterSpec);
+        KeyGenParameterSpec keyGenParameterSpec = MasterKeys.AES256_GCM_SPEC;
 
-            SharedPreferences secureSharedPreferences	=	EncryptedSharedPreferences.create(
-                    "shared",
+        try {
+            String mainKeyAlias = MasterKeys.getOrCreate(keyGenParameterSpec);
+
+            SharedPreferences secureSharedPreferences = EncryptedSharedPreferences.create(
+                    "secret_shared_prefs",
                     mainKeyAlias,
                     getBaseContext(),
                     EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                     EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             );
 
-            secureSharedPreferences.edit().putString("secure",	"ЛЮБИМЫЙ ПОЭТ");
+            secureSharedPreferences.edit().putString("secure", "Асадов Эдуард Аркадьевич").apply();
 
-            String	result	=	secureSharedPreferences.getString("secure",	"ЛЮБИМЫЙ АКТЕР");
+            String result = secureSharedPreferences.getString("secure", "unknown");
+            binding.textView.setText(result);
 
-        }	catch	(GeneralSecurityException | IOException e)	{
-            throw	new	RuntimeException(e);
+        } catch (GeneralSecurityException | IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
+
+

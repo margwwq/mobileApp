@@ -7,26 +7,42 @@
         <item
             android:id="@+id/nav_data"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/data" />
+            android:title="Data" />
         <item
             android:id="@+id/nav_webView"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/webview" />
+            android:title="Webview" />
         <item
             android:id="@+id/nav_notificationFragment"
             android:icon="@drawable/notification_icon"
-            android:title="@string/menu_notification"/>\
+            android:title="Menu_notification"/>\
         <item
             android:id="@+id/nav_compassFragment"
             android:icon="@drawable/compass_icon"
-            android:title="@string/menu_compass"/>
+            android:title="Menu_compass"/>
         <item
             android:id="@+id/nav_notesFragment"
             android:icon="@drawable/notes_icon"
-            android:title="@string/menu_notes"/>
+            android:title="Menu_notes"/>
         <item
             android:id="@+id/nav_microphoneFragment"
             android:icon="@drawable/microphone_icon"
-            android:title="@string/menu_microphone"/>
+            android:title="Menu_microphone"/>
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/profile_icon"
+            android:title="Profile"/>
+        <item
+            android:id="@+id/fileProcessingFragment"
+            android:icon="@drawable/file_icon"
+            android:title="File"/>
+        <item
+            android:id="@+id/mapFragment"
+            android:icon="@drawable/geometka"
+            android:title="Map"/>
+        <item
+            android:id="@+id/networkResource"
+            android:icon="@drawable/gen_icon"
+            android:title="Gen"/>
     </group>
 </menu>

@@ -112,13 +112,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f226f5f4-2ef7-47ec-aa88-1a4d7b042e77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Lesson6/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson6/employeedb/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/employeedb/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson6/notebook/src/main/res/raw/цитата 1" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/notebook/src/main/res/raw/c1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson6/notebook/src/main/res/raw/цитата 2" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/notebook/src/main/res/raw/c2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson7/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson7/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_file_processing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_file_processing.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les7/NetworkResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les7/NetworkResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les8/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les8/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les8/MapActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les8/MapActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +153,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,

@@ -41,7 +41,7 @@ public class NetworkResource extends Fragment {
         protected String doInBackground(Void... voids) {
             HttpURLConnection urlConnection = null;
             try {
-                URL url = new URL("https://zenquotes.io/api/quotes?topic=love");
+                URL url = new URL("https://zenquotes.io/api/quotes?");
                 urlConnection = (HttpURLConnection) url.openConnection();
                 InputStream in = urlConnection.getInputStream();
 

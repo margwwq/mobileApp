@@ -30,6 +30,7 @@ import com.yandex.runtime.Error;
 import com.yandex.runtime.image.ImageProvider;
 import com.yandex.runtime.network.NetworkError;
 import com.yandex.runtime.network.RemoteError;
+import com.yandex.mapkit.map.IconStyle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +47,7 @@ public class MapActivity extends AppCompatActivity implements DrivingSession.Dri
     private DrivingRouter drivingRouter;
     private DrivingSession drivingSession;
     private boolean isWork = false;
-    private final Point USER_LOC = new Point(55.596470, 37.987620);
+    private final Point USER_LOC = new Point(55.801121,37.80568);
     private PlacemarkMapObject markerHome, markerPlace;
     private MapObjectTapListener homeTapListener, placeTapListener;
     private int[] colors = {0xFFFF0000, 0xFF00FF00};
@@ -124,10 +125,13 @@ public class MapActivity extends AppCompatActivity implements DrivingSession.Dri
     private void addHomeMarker() {
         markerHome = mapView.getMap().getMapObjects().addPlacemark(USER_LOC,
                 ImageProvider.fromResource(this, R.drawable.geometka));
+        IconStyle iconStyle = new IconStyle();
+        iconStyle.setScale(0.1f);
+        markerHome.setIconStyle(iconStyle);
         homeTapListener = (mapObject, point) -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(MapActivity.this)
                     .setTitle("ДОМ")
-                    .setMessage("Островцы, ул. Подмосковная, д.36")
+                    .setMessage("11-я парковая 36")
                     .setPositiveButton("OK", null);
             builder.show();
             return false;
@@ -144,6 +148,9 @@ public class MapActivity extends AppCompatActivity implements DrivingSession.Dri
         if(latitude != null && longitude != null) {
             markerPlace = mapView.getMap().getMapObjects().addPlacemark(new Point(latitude, longitude),
                     ImageProvider.fromResource(this, R.drawable.geometka));
+            IconStyle iconStyle = new IconStyle();
+            iconStyle.setScale(0.1f);
+            markerPlace.setIconStyle(iconStyle);
             placeTapListener = (mapObject, point) -> {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MapActivity.this)
                         .setTitle(title)

@@ -37,5 +37,41 @@
         android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.MicrophoneFragment"
         android:label="@string/menu_microphone"
         tools:layout="@layout/fragment_microphone"/>
+    <fragment
+        android:id="@+id/fileProcessingFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les6.FileProcessingFragment"
+        android:label="fragment_file_processing"
+        tools:layout="@layout/fragment_file_processing" />
+    <activity
+        android:id="@+id/authentication"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les7.Authentication"
+        android:label="activity_authentication"
+        tools:layout="@layout/activity_authentication" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les6.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/networkResource"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les7.NetworkResource"
+        android:label="fragment_network_resource"
+        tools:layout="@layout/fragment_network_resource" />
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les8.MapActivity"
+        android:label="activity_map"
+        tools:layout="@layout/activity_map" />
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les8.MapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_map" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.MainActivity"
+        android:label="app_bar_main"
+        tools:layout="@layout/app_bar_main" />
+    <fragment android:id="@+id/placeholder" />
 
 </navigation>

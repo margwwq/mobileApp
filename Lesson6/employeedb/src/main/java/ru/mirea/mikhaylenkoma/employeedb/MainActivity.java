@@ -16,9 +16,9 @@ public class MainActivity extends AppCompatActivity {
         AppDatabase db = App.getInstance().getDatabase();
         EmployeeDao employeeDao = db.employeeDao();
         Employee employee = new Employee();
-        employee.id = 1;
-        employee.name = "DiCaprio";
-        employee.salary = 2000;
+      // employee.id = 1;
+       // employee.name = "DiCaprio";
+       // employee.salary = 2000;
 
         employeeDao.insert(employee);
 
