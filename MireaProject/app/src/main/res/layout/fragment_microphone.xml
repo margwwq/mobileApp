@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="158dp"
                 android:layout_weight="1"
-                android:text="Длительность:"
+                android:text="Длительность\n0:00:00"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="25sp"

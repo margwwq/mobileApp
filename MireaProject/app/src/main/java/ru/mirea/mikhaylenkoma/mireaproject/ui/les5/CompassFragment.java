@@ -68,6 +68,7 @@ public class CompassFragment extends Fragment implements SensorEventListener {
 
     @Override
     public void onAccuracyChanged(Sensor _sensor, int _accuracy) {
+
     }
 
     private void setText() {

@@ -29,9 +29,9 @@
         tools:layout="@layout/fragment_compass"/>
     <fragment
         android:id="@+id/nav_notesFragment"
-        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.NotesFragment"
+        android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.Camera"
         android:label="@string/menu_notes"
-        tools:layout="@layout/fragment_notes"/>
+        tools:layout="@layout/fragment_camera"/>
     <fragment
         android:id="@+id/nav_microphoneFragment"
         android:name="ru.mirea.mikhaylenkoma.mireaproject.ui.les5.MicrophoneFragment"

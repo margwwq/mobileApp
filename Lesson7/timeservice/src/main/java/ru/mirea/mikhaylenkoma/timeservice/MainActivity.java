@@ -1,11 +1,13 @@
 package ru.mirea.mikhaylenkoma.timeservice;
 
+import static android.content.ContentValues.TAG;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,18 +16,14 @@ import java.net.Socket;
 import ru.mirea.mikhaylenkoma.timeservice.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    private final String TAG = this.getClass().getSimpleName();
     private ActivityMainBinding binding;
     private final String host = "time.nist.gov";
     private final int port = 13;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     private class GetTimeTask extends AsyncTask<Void, Void, String> {
         @Override
         protected String doInBackground(Void... params) {
@@ -44,18 +41,25 @@ public class MainActivity extends AppCompatActivity {
                 BufferedReader reader = SocketUtils.getReader(socket);
                 reader.readLine();
                 timeResult = reader.readLine();
-                Log.d(TAG, timeResult);
+                Log.d(TAG,timeResult);
                 socket.close();
             } catch (IOException e) {
                 e.printStackTrace();
             }
             return timeResult;
         }
-
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            binding.textView.setText(result);
+            String[] parts = result.split(" ");
+            if (parts.length >= 3) {
+                String date = parts[1];
+                String time = parts[2];
+                String formattedDateTime = String.format("Дата: %s, Время: %s", date, time);
+                binding.textView.setText(formattedDateTime);
+            } else {
+                binding.textView.setText("Ошибка");
+            }
         }
     }
 }
