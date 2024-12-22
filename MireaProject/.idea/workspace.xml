@@ -112,13 +112,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f226f5f4-2ef7-47ec-aa88-1a4d7b042e77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les5/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les5/CompassFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les5/CompassFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ru/mirea/mikhaylenkoma/mireaproject/ui/les5/NotesFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_microphone.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_microphone.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_notes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_camera.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson6/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson6/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,8 +145,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2023.2/device-explorer/Pixel 6 API 33/_/data/data/ru.mirea.mikhaylenkoma.mireaproject/shared_prefs/profile_settings.xml" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2023.2/device-explorer/Pixel 6 API 33/_/storage/emulated/0/Documents/dd.txt" root0="SKIP_INSPECTION" />
-    <setting file="file://$USER_HOME$/AppData/Local/Google/AndroidStudio2023.2/device-explorer/Pixel 6 API 33/_/storage/emulated/0/Documents/цитата 1" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
